@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" />
+  <title>StoreFront</title>
+</head>
+<body>
+  <div class="header">StoreFront</div>
+<form action="customerBackend.php" method="get">
+  <div class="grid">
+    <div class="grid_item">
+      <div class="title">Orange</div>
+      <div class="image product_0"></div>
+      <div class="price">$0.69</div>\
+        <input id="qty_o" style="width:40px;display:inline-block;float:right;margin-right:6%;" name="orange" type="text" placeholder="Qty">
+    </div>
+    <div class="grid_item">
+      <div class="title">Banana</div>
+      <div class="image product_1"></div>
+      <div class="price">$0.69</div>\
+        <input id="qty_b" style="width:40px;display:inline-block;float:right;margin-right:6%;" name="banana" type="text" placeholder="Qty">
+    </div>
+    <div class="grid_item">
+      <div class="title">Guava</div>
+      <div class="image product_2"></div>
+      <div class="price">$1.99</div>\
+        <input id="qty_g" style="width:40px;display:inline-block;float:right;margin-right:6%;" name="guava" type="text" placeholder="Qty">
+    </div>
+    <div class="grid_item">
+      <div class="title">Peach</div>
+      <div class="image product_3"></div>
+      <div class="price">$3.69</div>\
+        <input id="qty_p" style="width:40px;display:inline-block;float:right;margin-right:6%;" name="peach" type="text" placeholder="Qty">
+    </div>
+    <div class="grid_item">
+      <div class="title">Strawberry</div>
+      <div class="image product_4"></div>
+      <div class="price">$0.69</div>\
+      <input id="qty_s" style="width:40px;display:inline-block;float:right;margin-right:6%;" name="strawberry" type="text" placeholder="Qty">
+    </div>
+    <div class="grid_item">
+      <div class="title">Cherry</div>
+      <div class="image product_5"></div>
+      <div class="price">$0.69</div>\
+        <input id="qty_c" style="width:40px;display:inline-block;float:right;margin-right:6%;" name="cherry" type="text" placeholder="Qty">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="cart">
+    <h3>Shopping Basket</h3>
+    <div id="cart" style="text-align:left;margin-left:0.5em;margin-right:auto;">Your Basket is Empty.</div>
+  </div>
+
+  <hr>
+
+  <div class="shipping_options">
+    <h3>Shipping Options</h3>
+    <div style="text-align:left;margin-left:0.5em;margin-right:auto;">
+      <label><input type="radio" name="shipping" id="shipping-1" value="0" checked> Free 7 day </label><br>
+      <label><input type="radio" name="shipping" id="shipping-3" value="5"> $5.00 3 day </label><br>
+      <label><input type="radio" name="shipping" id="shipping-2" value="50"> $50.00 over night </label>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="totalConfirmation">
+    <h3>Final Basket Review</h3>
+    <div id="review" style="text-align:left;margin-left:0.5em;margin-right:auto;">No Items in Basket</div>
+    <div>
+      <input style="width:100px;margin:0.5em;padding:0.5em;" type="submit">
+      <input style="width:100px;margin:0.5em;padding:0.5em" type="reset" onclick="javascript:window.location.reload();">
+    </div>
+  </div>
+  </form>
+  <hr>
+
+  <div class="footer">This is not a real store. Check yourself before you wreck yourself.</div>
+  <script src="formChecker.js" type="text/javascript"></script>
+</body>
+</html>
