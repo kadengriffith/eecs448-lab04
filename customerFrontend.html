@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="header">StoreFront</div>
-<form action="customerBackend.php" method="post">
+<form action="customerBackend.php" onsubmit="return validateEmail();" method="post">
   <div class="grid">
     <div class="grid_item">
       <div class="title">Orange</div>
@@ -73,8 +73,9 @@
     <h3>Final Basket Review</h3>
     <div id="review" style="text-align:left;margin-left:0.5em;margin-right:auto;">No Items in Basket</div>
     <div>
-      <input style="width:100px;margin:0.5em;padding:0.5em;" type="submit">
-      <input style="width:100px;margin:0.5em;padding:0.5em" type="reset" onclick="javascript:window.location.reload();">
+      <input style="width:100px;margin:0.5em;padding:0.5em" type="text" id="email" placeholder="Your Email*"><br>
+      <button style="width:100px;margin:0.5em;padding:0.5em;">Submit</button>
+      <button style="width:100px;margin:0.5em;padding:0.5em" type="reset" onclick="javascript:window.location.reload(0);">Reset Order</button>
     </div>
   </div>
   </form>
