@@ -14,7 +14,8 @@ $total = 0;
 $total += $shipping_choice;
 
 echo "<h3 style='margin:0.5em;'><b>Reciept</b></h3>";
-echo "<table style='width:20%' border='1'>";
+echo "<table style='width:20%;' border='1'>";
+echo "<tr><th>Fruits: $" . $orange . "</th></tr>";
 if($orange > 0) {
   $orange = $orange * 0.69;
   $total += $orange;
@@ -46,8 +47,7 @@ if($cherry > 0) {
   echo "<tr><th>Cherry Order: $" . $cherry . "</th></tr>";
 }
 
-echo "<tr><th>Shipping: $" . $shipping . "</th></tr>
-      <tr><th>Total: $" . $total. "</th></tr>";
+echo "<tr><th>Shipping: $" . $shipping . "</th></tr><tr><th>Total: $" . $total. "</th></tr>";
 echo "</table>";
 echo "<h3 style='margin:0.5em;'>Thank you for your order. Your order is being processed.</h3>";
 echo "<button onclick='javascript:window.print();'>Print Reciept</button>";
